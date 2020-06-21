@@ -32,21 +32,20 @@ public class InformacoesUsuarioPageObjectsTest {
 		    @Param(name="mensagem")String mensagem
 	) {		
 		String textoToast = new LoginPage(driver)
-		         .clickSignIn()
-		         .fazerLogin(login, senha)
-		         .clicarMe()
-		         .clicarNaAbaMoreDataAboutYou()
-		         .clicarNoBotãoAddMoreDataAboutYou()
-		         .adicionarContato(tipo, contato)
-		         .capturarTextoToast();
-		
+		    .clickSignIn()
+		    .fazerLogin(login, senha)
+		    .clicarMe()
+		    .clicarNaAbaMoreDataAboutYou()
+		    .clicarNoBotãoAddMoreDataAboutYou()
+		    .adicionarContato(tipo, contato)
+		    .capturarTextoToast();
 		assertEquals(mensagem, textoToast);
 		
 	}
 	
 	@After
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 		
 	}
 }
