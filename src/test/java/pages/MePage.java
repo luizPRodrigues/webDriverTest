@@ -15,7 +15,7 @@ public class MePage extends BasePage{
 		
 	}
 	
-	public AddContactPage clicarNoBotãoAddMorDataAboutYou() {
+	public AddContactPage clicarNoBotãoAddMoreDataAboutYou() {
 		
 		driver.findElement(By.xpath("//button[@data-target='addmoredata']")).click();
 
